@@ -1,0 +1,52 @@
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 450px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.upload-section {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0078ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+.loader {
+    margin: 20px auto;
+    border: 5px solid #ddd;
+    border-top: 5px solid #0078ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+h2 {
+    margin-top: 25px;
+    color: #333;
+}
