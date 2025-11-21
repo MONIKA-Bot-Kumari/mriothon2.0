@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Audio Event Spotter</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="container">
-        <h1>Audio Event Spotter</h1>
+        
+        <h1 class="title">
+            <span class="ai">AI</span> Audio Event Spotter
+        </h1>
 
-        <div class="upload-section">
-            <input type="file" id="audioFile" accept=".wav,.mp3" />
-            <button onclick="upload()">Analyze</button>
+        <div class="card">
+            <p class="subtitle">Upload an audio file and let AI detect key sound events.</p>
+
+            <label class="upload-box">
+                <input type="file" id="audioFile" accept=".wav,.mp3">
+                <span>Select Audio File</span>
+            </label>
+
+            <button class="analyze-btn" onclick="upload()">Analyze</button>
+
+            <div id="loader" class="loader" style="display:none;"></div>
+
+            <h2 id="result" class="result"></h2>
         </div>
-
-        <div id="loader" class="loader" style="display:none;"></div>
-
-        <h2 id="result"></h2>
     </div>
 </body>
 </html>
